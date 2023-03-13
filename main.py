@@ -1,3 +1,5 @@
+from decimal import Decimal  
+
 #Python String Basics
 
 # """"
@@ -127,16 +129,14 @@
 # Sally --- Subtraction -
 
 
-# 9 + 20 * 12 + (20 + 9) ** 2
-# 9 + 20 * 12 + 2900
-# 9 + 240 + 2900
-# 3149 
-
 # calculation = 9 + 20 * 12 + (20 + 9) ** 2
 
 # print(calculation)
 
-total = 100
+
+# How to Use Assignment Operators in Python
+
+# total = 100
 
 # total = total + 10
 
@@ -145,8 +145,37 @@ total = 100
 # total*= 10
 # total/= 10
 # total//= 10
-total **= 2
-total %= 10
+# total **= 2
+# total %= 10
 
 
-print(total)
+# shoes_new = 250
+# tshirt_new = 100
+
+# total += shoes_new
+# total += tshirt_new
+# discount =  total * 0.2
+
+# new_pack_collection = total - discount
+
+# print(new_pack_collection)
+
+
+
+# Decimal vs Float in Python
+#from decimal import Decimal calling from top
+
+# product_cost = 88.40 
+# commision_rate = 0.08 # 8%
+# qty = 450 Prin Solution # 42962.4
+
+
+# product_cost = Decimal(88.40)  #With decimal import
+# commision_rate = Decimal(0.08)
+
+# product_cost += (commision_rate * product_cost) 
+# print(product_cost * qty)  #42962.40000000000282883716451
+
+
+
+
