@@ -177,5 +177,43 @@ from decimal import Decimal
 # print(product_cost * qty)  #42962.40000000000282883716451
 
 
+# product_cost = 29.30
+# comission_rate = 0.02
+
+# qty = 960
+
+# print(int(product_cost)) #29 converting integer
+# print(float(qty)) #960.0
+# print(Decimal(product_cost)) #29.300000000000000710542735760100185871124267578125
+# print(complex(comission_rate)) #(0.02+0j)
+
+
+
+#Overview of Popular Math Functions in Python
+
+# import math
+
+# loss = -20.25
+# product_cost = 89.99
+
+
+# print(abs(loss))
+# print(math.floor(product_cost))
+# print(math.ceil(product_cost))
+# print(abs(math.floor(loss)))
+# print(round(product_cost))
+# print(math.sqrt(product_cost))
+# print(math.pow(3, 2))
+# print((3 ** 2))
+
+
+
+
+
+
+
+
+
+
 
 
