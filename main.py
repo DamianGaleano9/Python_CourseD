@@ -208,12 +208,61 @@ from decimal import Decimal
 
 
 
+"""
+Users Database Query
+
+Damian
+Massimo
+Salvador
+
+"""
+
+# users = ['Damian', 'Massimo', 'Salvador']
+# print(users)
+
+# users.insert(0, 'Ana')
+
+# print(users)
+
+# users.append('Isis')
+# print(users)
+
+# users[4] = 'Silvestre'
+
+# print(users)
+
+# print(users[1]) #Call like a string
+# print([users[1]]) #Call like a list
+
+
+# users = ['Damian', 'Massimo', 'Salvador']
+
+
+# users.remove('Damian')
+# print(users)
+
+
+# popped_user = users.pop()
+
+# print(users)
+# print(popped_user)
+# print(users)
+# users.append('Machi')
+# print(users)
+
+
+# del users[1]
+# print(users)
+
+
+#Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List
 
 
 
+users = ['Damian', 'Massimo', 'Salvador', 'Walter', 'Jessy']
 
-
-
-
-
-
+ids = [1, 2, 4]
+countries = ["Colombia", "Spain", "Germany"]
+users.append(countries)
+mixed_list = [ids, users]
+print(mixed_list)
