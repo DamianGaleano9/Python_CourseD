@@ -259,10 +259,31 @@ Salvador
 
 
 
-users = ['Damian', 'Massimo', 'Salvador', 'Walter', 'Jessy']
+# users = ['Damian', 'Massimo', 'Salvador', 'Walter', 'Jessy']
 
-ids = [1, 2, 4]
-countries = ["Colombia", "Spain", "Germany"]
-users.append(countries)
-mixed_list = [ids, users]
-print(mixed_list)
+# ids = [1, 2, 4]
+# countries = ["Colombia", "Spain", "Germany"]
+# users.append(countries)
+# mixed_list = [ids, users]
+# print(mixed_list)
+
+# final_list = mixed_list.pop()
+
+
+# print(final_list)
+
+
+# Overview of Python List Query Processes: len(), Negative Indexes, and index()
+
+tags = ['python', 'javascript', 'react', 'development']
+
+number_of_tags = len(tags)
+
+print(number_of_tags)
+
+
+last_tag = tags[-1]
+print(last_tag)
+
+index_of_last_item = tags.index(last_tag)
+print(index_of_last_item)
