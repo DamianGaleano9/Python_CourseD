@@ -1,6 +1,6 @@
-from decimal import Decimal  
+from decimal import Decimal
 
-#Python String Basics
+# Python String Basics
 
 # """"
 # starter_sentence = "The quick brown fox jumped"
@@ -61,8 +61,6 @@ from decimal import Decimal
 # print(manual_incrementing_matrix(9))
 
 
-
-
 # users = ["Damian", "Salvador", "Massimo"]
 # print(users)
 
@@ -78,7 +76,6 @@ from decimal import Decimal
 # print(number_of_tags)
 # print(last_item)
 # print(index_of_last_item)
-
 
 
 # product_id = 123 #enter
@@ -161,11 +158,10 @@ from decimal import Decimal
 # print(new_pack_collection)
 
 
-
 # Decimal vs Float in Python
-#from decimal import Decimal calling from top
+# from decimal import Decimal calling from top
 
-# product_cost = 88.40 
+# product_cost = 88.40
 # commision_rate = 0.08 # 8%
 # qty = 450 Prin Solution # 42962.4
 
@@ -173,7 +169,7 @@ from decimal import Decimal
 # product_cost = Decimal(88.40)  #With decimal import
 # commision_rate = Decimal(0.08)
 
-# product_cost += (commision_rate * product_cost) 
+# product_cost += (commision_rate * product_cost)
 # print(product_cost * qty)  #42962.40000000000282883716451
 
 
@@ -188,8 +184,7 @@ from decimal import Decimal
 # print(complex(comission_rate)) #(0.02+0j)
 
 
-
-#Overview of Popular Math Functions in Python
+# Overview of Popular Math Functions in Python
 
 # import math
 
@@ -205,7 +200,6 @@ from decimal import Decimal
 # print(math.sqrt(product_cost))
 # print(math.pow(3, 2))
 # print((3 ** 2))
-
 
 
 """
@@ -255,8 +249,7 @@ Salvador
 # print(users)
 
 
-#Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List
-
+# Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List
 
 
 # users = ['Damian', 'Massimo', 'Salvador', 'Walter', 'Jessy']
@@ -275,15 +268,58 @@ Salvador
 
 # Overview of Python List Query Processes: len(), Negative Indexes, and index()
 
-tags = ['python', 'javascript', 'react', 'development']
+# tags = ['python', 'javascript', 'react', 'development']
 
-number_of_tags = len(tags)
+# number_of_tags = len(tags)
 
-print(number_of_tags)
+# print(number_of_tags)
 
 
-last_tag = tags[-1]
-print(last_tag)
+# last_tag = tags[-1]
+# print(last_tag)
 
-index_of_last_item = tags.index(last_tag)
-print(index_of_last_item)
+# index_of_last_item = tags.index(last_tag)
+# print(index_of_last_item)
+
+
+# How to Sort Lists in Python****
+
+# tags = ['python', 'javascript', 'react', 'development']
+# print(tags)
+
+# tags.sort()
+# print(tags)
+# # ['development', 'javascript', 'python', 'react']
+
+
+# tags.sort(reverse=True)
+# print(tags)
+# # ['react', 'python', 'javascript', 'development']
+
+
+# numbers = [2, 3, 9, 22, 35, 1, 6, 8]
+# numbers.sort()
+# print(numbers)
+# # [1, 2, 3, 6, 8, 9, 22, 35]
+# numbers.sort(reverse=True)
+# print(numbers)
+# [35, 22, 9, 8, 6, 3, 2, 1]
+
+
+# Using the join Function in Python to Build a URL Query String
+
+# https://www.google.com/search?q=python+development+tutorial
+
+
+# uri = 'https://www.google.com/search?q='
+# tags = ['python', 'development', 'tutorial']
+
+# formatted_tags = '+'.join(tags)
+# print(formatted_tags)
+# # python+development+tutorial
+
+# #Use Interpolation
+
+# query_tags = f'{uri}{formatted_tags}'
+# print(query_tags)
+# # https://www.google.com/search?q=python+development+tutorial #We have the Same Url from the top
