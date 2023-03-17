@@ -306,7 +306,7 @@ Salvador
 # [35, 22, 9, 8, 6, 3, 2, 1]
 
 
-# Using the join Function in Python to Build a URL Query String
+# Using the join Function in Python to Build a URL Query String ***
 
 # https://www.google.com/search?q=python+development+tutorial
 
@@ -323,3 +323,63 @@ Salvador
 # query_tags = f'{uri}{formatted_tags}'
 # print(query_tags)
 # # https://www.google.com/search?q=python+development+tutorial #We have the Same Url from the top
+
+
+# Overview of Ranges in Python Lists ****
+
+# tags = ['python', 'javascript', 'react', 'development']
+
+
+# tags_range = tags[1:]
+# print(tags_range)
+# ['javascript', 'react', 'development']
+# tags_range = tags[:-1]
+# tags_range = tags[:-1]
+# print(tags_range)
+
+# ['python', 'javascript', 'react']
+
+
+
+# Advanced Techniques for Implementing Ranges and Slices in Python Lists*****
+
+
+tags = [
+  'python',
+  'development',
+  'tutorials',
+  'code',
+  'programming',
+  'computer science'
+]
+
+
+# tags_slice_range = tags[1:-1]
+# print(tags_slice_range)
+# ['development', 'tutorials', 'code', 'programming']#
+
+
+# tags_slice_range = tags[:-1:2]
+# # ['python', 'tutorials', 'programming']#
+# print(tags_slice_range)
+
+
+# tags_slice_range = tags[:-1:4]
+# print(tags_slice_range)
+# # ['python', 'programming']#
+
+
+# tags_slice_range = tags[::-1]
+# print(tags_slice_range)
+# ['computer science', 'programming', 'code', 'tutorials', 'development', 'python']# 
+#We got inversal list
+
+
+# tags.sort(reverse=True)
+# print(tags)
+# ['tutorials', 'python', 'programming', 'development', 'computer science', 'code']#
+
+
+forbidden_tags = tags.sort(reverse=True)
+print(forbidden_tags)
+# None# Inmutability python is not allowed
