@@ -1,5 +1,5 @@
 from decimal import Decimal
-
+import numpy as np
 # Python String Basics
 
 # """"
@@ -344,14 +344,14 @@ Salvador
 # Advanced Techniques for Implementing Ranges and Slices in Python Lists*****
 
 
-tags = [
-  'python',
-  'development',
-  'tutorials',
-  'code',
-  'programming',
-  'computer science'
-]
+# tags = [
+#   'python',
+#   'development',
+#   'tutorials',
+#   'code',
+#   'programming',
+#   'computer science'
+# ]
 
 
 # tags_slice_range = tags[1:-1]
@@ -380,6 +380,49 @@ tags = [
 # ['tutorials', 'python', 'programming', 'development', 'computer science', 'code']#
 
 
-forbidden_tags = tags.sort(reverse=True)
-print(forbidden_tags)
+# forbidden_tags = tags.sort(reverse=True)
+# print(forbidden_tags)
 # None# Inmutability python is not allowed
+
+
+# sales_prices = [
+#     100,
+#     300,
+#     129,
+#     23,
+#     36,
+#     99
+# ]
+
+# sales_prices.sort()
+# print(sales_prices)
+# [23, 36, 99, 100, 129, 300]#
+
+# sorted_sales_prices = sales_prices.sort()
+# print(sorted_sales_prices)
+# None#
+
+# sorted_sales_prices = sorted(sales_prices)
+# print(sorted_sales_prices)
+# [23, 36, 99, 100, 129, 300]
+#We can store the variable with sorted with sort not
+
+# sorted_list = sorted(sales_prices, reverse=True)
+# print(sorted_list)
+# [300, 129, 100, 99, 36, 23]#
+
+
+# import numpy as np from the top#
+
+data = [19, 18, 17, 9, 6, 3, 2, 1, 8, 26, 35]
+
+print("Media: ", np.mean(data))
+print("Mediana: ", np.median(data))
+print("Desviacion Estandar: ", np.std(data))
+print("Variancia: ", np.var(data))
+
+# Media:  13.090909090909092
+# Mediana:  9.0
+# Desviacion Estandar:  10.378776819281875
+# Variancia:  107.7190082644628
+
