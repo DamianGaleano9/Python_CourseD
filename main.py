@@ -371,7 +371,7 @@ Salvador
 
 # tags_slice_range = tags[::-1]
 # print(tags_slice_range)
-# ['computer science', 'programming', 'code', 'tutorials', 'development', 'python']# 
+# ['computer science', 'programming', 'code', 'tutorials', 'development', 'python']#
 #We got inversal list
 
 
@@ -414,15 +414,140 @@ Salvador
 
 # import numpy as np from the top#
 
-data = [19, 18, 17, 9, 6, 3, 2, 1, 8, 26, 35]
+# data = [19, 18, 17, 9, 6, 3, 2, 1, 8, 26, 35]
 
-print("Media: ", np.mean(data))
-print("Mediana: ", np.median(data))
-print("Desviacion Estandar: ", np.std(data))
-print("Variancia: ", np.var(data))
+# print("Media: ", np.mean(data))
+# print("Mediana: ", np.median(data))
+# print("Desviacion Estandar: ", np.std(data))
+# print("Variancia: ", np.var(data))
 
-# Media:  13.090909090909092
-# Mediana:  9.0
-# Desviacion Estandar:  10.378776819281875
-# Variancia:  107.7190082644628
+# # Media:  13.090909090909092
+# # Mediana:  9.0
+# # Desviacion Estandar:  10.378776819281875
+# # Variancia:  107.7190082644628
 
+# first_name = "Damian"
+# last_name = "Mazo"
+
+
+# def function(first_name, last_name):
+#     greeting = f"Hello, {first_name} {last_name}"
+
+
+#     return greeting
+
+
+# print(function(first_name, last_name))
+
+
+
+# How to Find the Median of a Python List with an Odd Number of Numbers#
+
+"""
+Tools :
+-math library
+-sorted function
+-list slicing function
+-computation
+
+# """
+# import math
+
+# sale_prices = [
+#   100,
+#   83,
+#   220,
+#   40,
+#   100,
+#   400,
+#   10,
+#   1,
+#   3
+# ]
+
+# # sale_prices.sort
+# # print(sale_prices)
+# # [100, 83, 220, 40, 100, 400, 10, 1, 3]#
+
+# sorted_list = sorted(sale_prices)
+# # print(sorted_list)
+# # [1, 3, 10, 40, 83, 100, 100, 220, 400]#
+
+# num_of_sales = len(sorted_list)
+# # print(num_of_sales)
+# # 9#
+
+# # first_sales_item = sorted_list[:math.floor(num_of_sales/2)]
+# # print(first_sales_item)
+# # [1, 3, 10, 40]  #We take the first 4 element with math, we know the num
+
+
+# last_item_sales = sorted_list[-(math.floor(num_of_sales/2)):]
+# print(last_item_sales)
+# # [100, 100, 220, 400]#
+
+# half_slices = math.floor(num_of_sales/2) #We create this variable best practices
+# median = sorted_list[half_slices:(half_slices) + 1]
+# print(median)
+# # [83]#
+
+
+# tags = [
+#     'pythons',
+#     'javascript',
+#     'development',
+#     'data',
+#     'tutorials'
+# ]
+
+# # print(tags[:2])
+# # ['pythons', 'javascript']#
+
+# slice_object = slice(2)
+
+# # print(slice_object)
+# # slice(None, 2, None)#
+
+
+# print(tags[slice_object])
+# ['pythons', 'javascript'] #We have the same behavior
+
+
+# slice_object = slice(1, 2, 9)
+
+# print(slice_object.start)
+# # 1#
+# print(slice_object.stop)
+# # 2#
+# print(slice_object.step)
+# # 9#
+
+
+# How to Add to a List in Python with Both In Place and Copy Processes
+
+tags = ['pythons', 'javascript', 'tutorials']
+
+# Nope
+
+# tags[-1] = 'programming'
+# print(tags) # This way remove the original list
+
+# tags.extend('react')
+# print(tags) # This way add the element separted
+
+
+# tags.extend(['react'])
+# print(tags) 
+# ['pythons', 'javascript', 'tutorials', 'react']#
+
+#Correct way to add
+
+
+new_tag = tags + ['react']
+tags.extend(['Damian'])
+
+print(new_tag) 
+# ['pythons', 'javascript', 'tutorials', 'react']#
+
+print(tags)
+# ['pythons', 'javascript', 'tutorials']#
