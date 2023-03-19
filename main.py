@@ -340,7 +340,6 @@ Salvador
 # ['python', 'javascript', 'react']
 
 
-
 # Advanced Techniques for Implementing Ranges and Slices in Python Lists*****
 
 
@@ -372,7 +371,7 @@ Salvador
 # tags_slice_range = tags[::-1]
 # print(tags_slice_range)
 # ['computer science', 'programming', 'code', 'tutorials', 'development', 'python']#
-#We got inversal list
+# We got inversal list
 
 
 # tags.sort(reverse=True)
@@ -405,7 +404,7 @@ Salvador
 # sorted_sales_prices = sorted(sales_prices)
 # print(sorted_sales_prices)
 # [23, 36, 99, 100, 129, 300]
-#We can store the variable with sorted with sort not
+# We can store the variable with sorted with sort not
 
 # sorted_list = sorted(sales_prices, reverse=True)
 # print(sorted_list)
@@ -438,7 +437,6 @@ Salvador
 
 
 # print(function(first_name, last_name))
-
 
 
 # How to Find the Median of a Python List with an Odd Number of Numbers#
@@ -525,7 +523,7 @@ Tools :
 
 # How to Add to a List in Python with Both In Place and Copy Processes
 
-tags = ['pythons', 'javascript', 'tutorials']
+# tags = ['pythons', 'javascript', 'tutorials']
 
 # Nope
 
@@ -537,17 +535,58 @@ tags = ['pythons', 'javascript', 'tutorials']
 
 
 # tags.extend(['react'])
-# print(tags) 
+# print(tags)
 # ['pythons', 'javascript', 'tutorials', 'react']#
 
-#Correct way to add
+# Correct way to add
 
 
-new_tag = tags + ['react']
-tags.extend(['Damian'])
+# new_tag = tags + ['react']
+# tags.extend(['Damian'])
 
-print(new_tag) 
-# ['pythons', 'javascript', 'tutorials', 'react']#
+# print(new_tag)
+# # ['pythons', 'javascript', 'tutorials', 'react']#
 
-print(tags)
-# ['pythons', 'javascript', 'tutorials']#
+# print(tags)
+# # ['pythons', 'javascript', 'tutorials']#
+
+# players = {
+#     "ss": "Correa",
+#     "2b": "Altuve",
+#     "3b": "Bregman",
+#     "DH": "Gattis",
+#     "OF": "Springer",
+# }
+
+# # print(players)
+
+# second_player = players["2b"]
+# last_player = players["OF"]
+# dessignated_player = players["DH"]
+
+
+# print(second_player)
+# print(dessignated_player)
+# print(last_player)
+# # Altuve
+# # Gattis
+# # Springer
+
+# How to Add New Key/Value Pairs to Python Dictionaries
+
+teams = {
+    "astros": ["Altuve", "Correa", "Bregman"],
+    "angels": ["Trout", "Pujols"],
+    "yankees": ["Judge", "Stanton"]
+}
+
+teams["Barcelona"] = ["Messi", "Ronaldinho"]
+
+
+# featured_teams = teams["Madrid"]
+# print(teams)
+# KeyError: 'Madrid'#
+
+featured_teams_new = teams.get("Barcelona", "Not Found it")
+
+print(featured_teams_new)
