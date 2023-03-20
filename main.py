@@ -574,19 +574,98 @@ Tools :
 
 # How to Add New Key/Value Pairs to Python Dictionaries
 
+# teams = {
+#     "astros": ["Altuve", "Correa", "Bregman"],
+#     "angels": ["Trout", "Pujols"],
+#     "yankees": ["Judge", "Stanton"]
+# }
+
+# teams["Barcelona"] = ["Messi", "Ronaldinho"]
+
+
+# # featured_teams = teams["Madrid"]
+# # print(teams)
+# # KeyError: 'Madrid'#
+
+# featured_teams_new = teams.get("Barcelona", "Not Found it")
+
+# # print(featured_teams_new)
+
+# print(id(teams))
+# 2108982734208
+
+
+# list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# list[0] = 99
+
+# print(id(list))
+# 1954884664384
+
+
+# list[0] = 1
+# print(id(list))
+
+
+# import keyword
+# print(keyword.kwlist)
+# ['False', 'None', 'True',
+# 'and', 'as', 'assert', 'async',
+#  'await', 'break', 'class', 'continue'
+#  , 'def', 'del', 'elif', 'else', 'except',
+# 'finally', 'for', 'from', 'global', 'if',
+# 'import', 'in', 'is', 'lambda', 'nonlocal', 'not',
+# 'or', 'pass', 'raise',
+# 'return', 'try', 'while', 'with', 'yield']
+
+
+
+players = {
+    "ss": "Correa",
+    "2b": "Altuve",
+    "3b": "Bregman",
+    "DH": "Gattis",
+    "OF": "Springer",
+}
+# print(players.keys())
+# dict_keys(['ss', '2b', '3b', 'DH', 'OF'])#
+
+# print(players.values())
+# dict_values(['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer'])#
+
+# print(players.items())
+# # dict_items([('ss', 'Correa'), ('2b', 'Altuve'), ('3b', 'Bregman'), ('DH', 'Gattis'), ('OF', 'Springer')])#
+# #Returns a tuple 
+
+# print(players.keys()[0])
+# TypeError: 'dict_keys' object is not subscriptable
+#We can't use  dict_keys isn't not a list 
+
+#For to fix this
+
+# players_names = list(players.copy().values())
+
+# print(players_names)
+# ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']
+
+
+# Correa#
+# ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']#
+# We have a list of players converting to lists
+
+
+
 teams = {
     "astros": ["Altuve", "Correa", "Bregman"],
     "angels": ["Trout", "Pujols"],
-    "yankees": ["Judge", "Stanton"]
+    "yankees": ["Judge", "Stanton"],
+    "red sox" : ["Messi", "Ronaldinho"]
 }
 
-teams["Barcelona"] = ["Messi", "Ronaldinho"]
 
-
-# featured_teams = teams["Madrid"]
-# print(teams)
-# KeyError: 'Madrid'#
-
-featured_teams_new = teams.get("Barcelona", "Not Found it")
-
-print(featured_teams_new)
+team_groupings = teams.items()
+print(team_groupings)
+# dict_items([('astros', ['Altuve', 'Correa', 'Bregman']), ('angels', ['Trout', 'Pujols']),
+# ('yankees', ['Judge', 'Stanton']), ('red sox', ['Messi', 'Ronaldinho'])])
+print(len(team_groupings))
+# 4#
