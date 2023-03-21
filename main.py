@@ -619,53 +619,150 @@ Tools :
 # 'return', 'try', 'while', 'with', 'yield']
 
 
+# players = {
+#     "ss": "Correa",
+#     "2b": "Altuve",
+#     "3b": "Bregman",
+#     "DH": "Gattis",
+#     "OF": "Springer",
+# }
+# # print(players.keys())
+# # dict_keys(['ss', '2b', '3b', 'DH', 'OF'])#
 
-players = {
-    "ss": "Correa",
-    "2b": "Altuve",
-    "3b": "Bregman",
-    "DH": "Gattis",
-    "OF": "Springer",
+# # print(players.values())
+# # dict_values(['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer'])#
+
+# # print(players.items())
+# # # dict_items([('ss', 'Correa'), ('2b', 'Altuve'), ('3b', 'Bregman'), ('DH', 'Gattis'), ('OF', 'Springer')])#
+# # #Returns a tuple
+
+# # print(players.keys()[0])
+# # TypeError: 'dict_keys' object is not subscriptable
+# #We can't use  dict_keys isn't not a list
+
+# #For to fix this
+
+# # players_names = list(players.copy().values())
+
+# # print(players_names)
+# # ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']
+
+
+# # Correa#
+# # ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']#
+# # We have a list of players converting to lists
+
+
+# teams = {
+#     "astros": ["Altuve", "Correa", "Bregman"],
+#     "angels": ["Trout", "Pujols"],
+#     "yankees": ["Judge", "Stanton"],
+#     "red sox" : ["Messi", "Ronaldinho"]
+# }
+
+
+# team_groupings = teams.items()
+# # print(team_groupings)
+# # dict_items([('astros', ['Altuve', 'Correa', 'Bregman']), ('angels', ['Trout', 'Pujols']),
+# # ('yankees', ['Judge', 'Stanton']), ('red sox', ['Messi', 'Ronaldinho'])])
+# print(list(team_groupings)[3][1][0])
+# ('astros', ['Altuve', 'Correa', 'Bregman']) # We convert the have a tuple
+# # Messi#
+
+# Overview of the Multiple Methods for Deleting Items in a Python Dictionary#
+
+
+# teams = {
+#     "astros": ["Altuve", "Correa", "Bregman"],
+#     "angels": ["Trout", "Pujols"],
+#     "yankees": ["Judge", "Stanton"],
+#     "red sox" : ["Messi", "Ronaldinho"]
+# }
+
+
+# del teams["angels"]
+# print(teams)
+
+
+# {'astros': ['Altuve', 'Correa', 'Bregman'],
+#  'yankees': ['Judge', 'Stanton'], 'red sox': ['Messi', 'Ronaldinho']}#
+
+
+# del teams["Madrid"]
+# print(teams.get("Madrid", "No team found"))
+
+# remove_teams = teams.pop("red sox","No team found")
+# print(remove_teams)
+
+
+# teams = [
+#     {
+#         'astros': {
+#             '2B': 'Altuve',
+#             'SS': 'Correa',
+#             '3B': 'Bregman',
+#         }
+#     },
+#     {
+#         'angels': {
+#             'OF': 'Trout',
+#             'Dh': 'Pujols',
+#         }
+#     }
+# ]
+
+
+# print(teams[0])
+# {'astros': {'2B': 'Altuve', 'SS': 'Correa', '3B': 'Bregman'}}#
+
+# angels = teams[1].get("angels", "No team found")
+# print(list(angels.values())[1])
+# # dict_values(['Trout', 'Pujols'])#
+# # Pujols#
+
+# angels_new = teams[1].get('angels', 'Team not found')
+# print(list(angels_new.values())[0])
+# # Trout#
+
+
+# Build a Histogram in Python with No 3rd Party Libraries#
+
+sales = {
+  'google': 20,
+  'facebook': 42,
+  'twitter': 2,
+  'offline': 12,
 }
-# print(players.keys())
-# dict_keys(['ss', '2b', '3b', 'DH', 'OF'])#
-
-# print(players.values())
-# dict_values(['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer'])#
-
-# print(players.items())
-# # dict_items([('ss', 'Correa'), ('2b', 'Altuve'), ('3b', 'Bregman'), ('DH', 'Gattis'), ('OF', 'Springer')])#
-# #Returns a tuple 
-
-# print(players.keys()[0])
-# TypeError: 'dict_keys' object is not subscriptable
-#We can't use  dict_keys isn't not a list 
-
-#For to fix this
-
-# players_names = list(players.copy().values())
-
-# print(players_names)
-# ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']
 
 
-# Correa#
-# ['Correa', 'Altuve', 'Bregman', 'Gattis', 'Springer']#
-# We have a list of players converting to lists
+print('g ' + sales['google'] * '$')
+print('f ' + sales['facebook'] * '$')
+print('t ' + sales['twitter'] * '$')
+print('o ' + sales['offline'] * '$')
+
+# g $$$$$$$$$$$$$$$$$$$$
+# f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+# t $$$$$$$$$$
+# o $$$$$$$$$$$$
 
 
 
-teams = {
-    "astros": ["Altuve", "Correa", "Bregman"],
-    "angels": ["Trout", "Pujols"],
-    "yankees": ["Judge", "Stanton"],
-    "red sox" : ["Messi", "Ronaldinho"]
-}
+#LIST 
+#DICTIONARY
+#TUPLE  
 
 
-team_groupings = teams.items()
-print(team_groupings)
-# dict_items([('astros', ['Altuve', 'Correa', 'Bregman']), ('angels', ['Trout', 'Pujols']),
-# ('yankees', ['Judge', 'Stanton']), ('red sox', ['Messi', 'Ronaldinho'])])
-print(len(team_groupings))
-# 4#
+# Tuple = Inmmutable 
+# list  = mutable
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content' )
+
+
+#Tuple unpacking 
+
+title, sub_heading, content = post
+#This create a query engine
+
+#title = post[0]
+#sub_heading = post[1]
+#content = post[2]
