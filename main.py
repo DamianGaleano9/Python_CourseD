@@ -727,18 +727,18 @@ Tools :
 
 # Build a Histogram in Python with No 3rd Party Libraries#
 
-sales = {
-  'google': 20,
-  'facebook': 42,
-  'twitter': 2,
-  'offline': 12,
-}
+# sales = {
+#   'google': 20,
+#   'facebook': 42,
+#   'twitter': 2,
+#   'offline': 12,
+# }
 
 
-print('g ' + sales['google'] * '$')
-print('f ' + sales['facebook'] * '$')
-print('t ' + sales['twitter'] * '$')
-print('o ' + sales['offline'] * '$')
+# print('g ' + sales['google'] * '$')
+# print('f ' + sales['facebook'] * '$')
+# print('t ' + sales['twitter'] * '$')
+# print('o ' + sales['offline'] * '$')
 
 # g $$$$$$$$$$$$$$$$$$$$
 # f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -755,14 +755,66 @@ print('o ' + sales['offline'] * '$')
 # Tuple = Inmmutable 
 # list  = mutable
 
-post = ('Python Basics', 'Intro guide to python', 'Some cool python content' )
+# post = ('Python Basics', 'Intro guide to python', 'Some cool python content' )
 
 
-#Tuple unpacking 
+# #Tuple unpacking 
+# title, sub_heading, content = post
 
-title, sub_heading, content = post
+
 #This create a query engine
 
-#title = post[0]
-#sub_heading = post[1]
-#content = post[2]
+# title = post[0]
+# sub_heading = post[1]
+# content = post[2]
+
+# print(title)
+# print(sub_heading)
+# print(content)
+
+
+# post = ('Python Basics', 'Intro guide to python', 'Some cool python content' )
+# print(id(post))
+# 2876106480320
+
+
+# post = post + ('published',)
+# post += ('35')
+# print(id(post))
+# 2312233874224
+# #Unpacking
+
+# title, sub_heading, content, status, age= post
+
+# print(title)
+# print(sub_heading)
+# print(content)
+# print(status)
+# Intro guide to python
+# Some cool python content
+# published
+
+# # Working with Lists Nested in Tuples#
+# post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+# tags = ['python', 'tuple', 'list']
+
+
+# post += (tags,)
+
+# # print(post)
+# ('Python Basics', 'Intro guide to python', 'Some cool python content', 'tags')
+# print(post)
+# ('Python Basics', 'Intro guide to python', 'Some cool python content', ['python', 'tuple', 'list'])
+# print(post[-1][1])
+# ['python', 'tuple', 'list']
+
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+post = list(post)
+# print(post)
+post.remove('Python Basics')
+# print(post)
+post = tuple(post)
+print(post)
+post += ('Python Basics',)
+print(post)
