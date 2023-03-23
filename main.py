@@ -746,23 +746,21 @@ Tools :
 # o $$$$$$$$$$$$
 
 
+# LIST
+# DICTIONARY
+# TUPLE
 
-#LIST 
-#DICTIONARY
-#TUPLE  
 
-
-# Tuple = Inmmutable 
+# Tuple = Inmmutable
 # list  = mutable
 
 # post = ('Python Basics', 'Intro guide to python', 'Some cool python content' )
 
 
-# #Tuple unpacking 
+# #Tuple unpacking
 # title, sub_heading, content = post
 
-
-#This create a query engine
+# This create a query engine
 
 # title = post[0]
 # sub_heading = post[1]
@@ -808,13 +806,135 @@ Tools :
 # print(post[-1][1])
 # ['python', 'tuple', 'list']
 
+# Three Ways to Remove Elements from a Python Tuple#
 
-post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
-post = list(post)
+# post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+# post = list(post)
+# # print(post)
+# post.remove('Python Basics')
+# # print(post)
+# post = tuple(post)
 # print(post)
-post.remove('Python Basics')
+# post += ('Python Basics',)
 # print(post)
-post = tuple(post)
-print(post)
-post += ('Python Basics',)
-print(post)
+
+
+
+# numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# primera_posicion =  numeros[0]
+# print(primera_posicion)
+
+
+# longitud_lista = len(numeros)
+# print(f"El primer elemento de la lista es: {primera_posicion}\nla longitud de la lista es: {longitud_lista}" )
+
+
+# for num in numeros:
+#     print(num)
+
+# new_list = ["You", "Are", "Amazing", "Great", "person"]
+
+# ultima_posicion = new_list[-1]
+# print(ultima_posicion)
+
+# penultima_posicion = new_list[-2]
+# print(penultima_posicion)
+
+# elementos_del_centro = new_list[1:-1]
+# print(elementos_del_centro)
+
+# center_element = new_list[2]
+# print(center_element)
+
+
+# list_name = ["Damian", "Ana", "Massimo", "Salvador"]
+
+# name = "Ana"
+# other_name = "Isis"
+
+
+# if name in list_name:
+#     print(f"The name is here and is {name}")
+
+# if other_name not in list_name:
+#         print(f"Name is {other_name}")
+
+
+# modify elements of a list
+
+# lenguajes = ["pythons", "react", "javascript"]
+
+# # new_lenguage = lenguajes[0]
+# lenguajes[0] = "Ruby"
+
+
+# print(lenguajes)
+# # ['Ruby', 'react', 'javascript']#
+# lenguajes[0:2] = ["html", "css"]
+
+# print(lenguajes)
+# # ['html', 'css', 'javascript']#
+# lenguajes.insert(0, "Damian")
+# print(lenguajes)
+# # ['Damian', 'html', 'css', 'javascript']#
+
+# lenguajes.append("Sass")
+# print(lenguajes)
+
+
+# lists_name = ["Damian", "Ana", "Salvatore"]
+
+
+# lenguajes.extend(lists_name)
+# print(lenguajes)
+# ['Damian', 'html', 'css', 'javascript', 'Sass', 'Damian', 'Ana', 'Salvatore']
+
+
+# lists_name = ["Damian", "Ana", "Salvatore"]
+
+# # for x in lists_name:
+# #         print(x)
+
+# lists_name[1] = "Maria"
+# print(lists_name)
+
+# lists_name.insert(1, "Ana")
+# print(lists_name)
+# lists_name.pop()
+# print(lists_name)
+
+
+# post = ('Python Basic', 'Intro guide to Python', 'Published')
+# post = list(post)
+# print(post)
+# post[0] = "JavaScript"
+# print(post)
+# post = tuple(post)
+# print(post)
+
+
+
+# list_number = [1, 12, 31, 4, 5, 36, 78, 8]
+# list_number.sort()
+# print(list_number)
+
+# list_number.sort(reverse=True)
+# print(list_number)
+
+# How to Use a Tuple as a Dictionary Key in Python#
+priority_index = {
+    (1, 'premier'): [1, 34, 9],
+    (1, 'mvp'): [1, 34, 9],
+    (2, 'standard'): [99, 81, 2]
+}
+
+# print(list(priority_index.keys()))
+# # [(1, 'premier'), (1, 'mvp'), (2, 'standard')]#
+# print(list(priority_index.values()))
+# # [[1, 34, 9], [1, 34, 9], [99, 81, 2]]#
+# print(list(priority_index.items()))
+
+print(list(priority_index.keys())[0][1])
+priority_index ['age'] = 'Damian'
+print(list(priority_index))
+
