@@ -921,20 +921,75 @@ Tools :
 # list_number.sort(reverse=True)
 # print(list_number)
 
-# How to Use a Tuple as a Dictionary Key in Python#
-priority_index = {
-    (1, 'premier'): [1, 34, 9],
-    (1, 'mvp'): [1, 34, 9],
-    (2, 'standard'): [99, 81, 2]
+# # How to Use a Tuple as a Dictionary Key in Python#
+# priority_index = {
+#     (1, 'premier'): [1, 34, 9],
+#     (1, 'mvp'): [1, 34, 9],
+#     (2, 'standard'): [99, 81, 2]
+# }
+
+# # print(list(priority_index.keys()))
+# # # [(1, 'premier'), (1, 'mvp'), (2, 'standard')]#
+# # print(list(priority_index.values()))
+# # # [[1, 34, 9], [1, 34, 9], [99, 81, 2]]#
+# # print(list(priority_index.items()))
+
+# print(list(priority_index.keys())[0][1])
+# priority_index ['age'] = 'Damian'
+# print(list(priority_index))
+
+# Guide to Python's Zip Function#
+
+# positions = ['1p', '2p', '3p']
+# players = ['Damian', 'Ana', 'Salvador']
+
+# mixing_list = zip(positions, players)
+# # <zip object at 0x000001C4EC542680>#
+# #We have a zip objet we need to call list Function for to merge
+# print(list(mixing_list))
+# # [('1p', 'Damian'), ('2p', 'Ana'), ('3p', 'Salvador')]#
+
+#Uniqueness 
+
+# tags = {
+#     'python',
+#     'javascript',
+#     'react'
+# }
+
+# print((tags))
+
+# query_one = 'python' in tags
+# print(query_one)
+
+
+#Various Methods for Merging Python Sets#
+
+
+tags_one = {
+    'python',
+  'coding',
+  'tutorials',
+  'coding'
 }
 
-# print(list(priority_index.keys()))
-# # [(1, 'premier'), (1, 'mvp'), (2, 'standard')]#
-# print(list(priority_index.values()))
-# # [[1, 34, 9], [1, 34, 9], [99, 81, 2]]#
-# print(list(priority_index.items()))
+tags_two = {
+    'ruby',
+  'coding',
+  'tutorials',
+  'development'
+}
 
-print(list(priority_index.keys())[0][1])
-priority_index ['age'] = 'Damian'
-print(list(priority_index))
 
+merged_tags = tags_one | tags_two
+print(merged_tags)
+# {'python', 'tutorials', 'ruby', 'development', 'coding'}#
+exclusive_to_tag_one = tags_one - tags_two
+print(exclusive_to_tag_one)
+# {'python'}#
+exclusive_to_tag_two = tags_two - tags_one
+print(exclusive_to_tag_two)
+# {'ruby', 'development'}#
+
+universals_tags = tags_one & tags_two
+print(universals_tags)
