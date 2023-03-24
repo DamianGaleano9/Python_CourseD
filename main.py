@@ -819,7 +819,6 @@ Tools :
 # print(post)
 
 
-
 # numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # primera_posicion =  numeros[0]
 # print(primera_posicion)
@@ -913,7 +912,6 @@ Tools :
 # print(post)
 
 
-
 # list_number = [1, 12, 31, 4, 5, 36, 78, 8]
 # list_number.sort()
 # print(list_number)
@@ -949,7 +947,7 @@ Tools :
 # print(list(mixing_list))
 # # [('1p', 'Damian'), ('2p', 'Ana'), ('3p', 'Salvador')]#
 
-#Uniqueness 
+# Uniqueness
 
 # tags = {
 #     'python',
@@ -963,7 +961,7 @@ Tools :
 # print(query_one)
 
 
-#Various Methods for Merging Python Sets#
+# Various Methods for Merging Python Sets#
 
 
 # tags_one = {
@@ -1004,11 +1002,80 @@ heading_generator('Hi there','3')
 
 """
 
-def heading_generator(title, heading_type):
-  return f'<h{heading_type}>{title}</h{heading_type}>'
+# def heading_generator(title, heading_type):
+#   return f'<h{heading_type}>{title}</h{heading_type}>'
 
 
-print(heading_generator('Hy Damian', '1'))
-print(heading_generator('Hy Ana', '2'))
-print(heading_generator('Hy Salvado', '3'))
-print(heading_generator('Hy Massimo', '4'))
+# print(heading_generator('Hy Damian', '1'))
+# print(heading_generator('Hy Ana', '2'))
+# print(heading_generator('Hy Salvado', '3'))
+# print(heading_generator('Hy Massimo', '4'))
+# <h1>Hy Damian</h1>
+# <h2>Hy Ana</h2>
+# <h3>Hy Salvado</h3>
+# <h4>Hy Massimo</h4>
+
+# How to Implement Python Loops for Lists, Tuples, and Dictionaries#
+
+
+# players = ["Damian", "Salvador", "Massimo", "Ana"]
+
+# for var in players:
+#     print(var)
+
+# It works the same way
+
+
+# players = ("Damian", "Salvador", "Massimo", "Ana")
+
+# for var in players:
+#     print(var)
+
+# names = {
+#     '10': 'messi',
+#     '7': 'Cristiano',
+#     '3': 'Roberto Carlos',
+# }
+
+
+# for numbers, players in names.items():
+#   print('Name T-shirt', numbers)
+#   print('Name ', players)
+# # Name T-shirt 10
+# # Name  messi
+# # Name T-shirt 7
+# # Name  Cristiano
+# # Name T-shirt 3
+# # Name  Roberto Carlos
+
+# def loop_over_list():
+#     # Write your code here
+#       my_list = ["Damian", "Salvador", "Massimo", "Ana", "Isis"]
+#       for x in my_list:
+#         print(x)
+    
+#         return my_list
+      
+# alphabet = 'abcdef'
+
+# for letter in alphabet:
+#   print(letter)
+
+#   def loop_over_string():
+#     # Write your code here
+#         name = "Damian"
+#         for letter in name:
+#             print(letter)
+#         return name
+
+# alphabet = 'abcdef'
+
+# for letter in alphabet:
+#   print(letter)
+
+
+# for num in range(1, 10, 3):
+#     print(num)
+
+
+# Guide to Continue and Break in Python Loops#
