@@ -966,30 +966,49 @@ Tools :
 #Various Methods for Merging Python Sets#
 
 
-tags_one = {
-    'python',
-  'coding',
-  'tutorials',
-  'coding'
-}
+# tags_one = {
+#     'python',
+#   'coding',
+#   'tutorials',
+#   'coding'
+# }
 
-tags_two = {
-    'ruby',
-  'coding',
-  'tutorials',
-  'development'
-}
+# tags_two = {
+#     'ruby',
+#   'coding',
+#   'tutorials',
+#   'development'
+# }
 
 
-merged_tags = tags_one | tags_two
-print(merged_tags)
-# {'python', 'tutorials', 'ruby', 'development', 'coding'}#
-exclusive_to_tag_one = tags_one - tags_two
-print(exclusive_to_tag_one)
-# {'python'}#
-exclusive_to_tag_two = tags_two - tags_one
-print(exclusive_to_tag_two)
-# {'ruby', 'development'}#
+# merged_tags = tags_one | tags_two
+# print(merged_tags)
+# # {'python', 'tutorials', 'ruby', 'development', 'coding'}#
+# exclusive_to_tag_one = tags_one - tags_two
+# print(exclusive_to_tag_one)
+# # {'python'}#
+# exclusive_to_tag_two = tags_two - tags_one
+# print(exclusive_to_tag_two)
+# # {'ruby', 'development'}#
 
-universals_tags = tags_one & tags_two
-print(universals_tags)
+# universals_tags = tags_one & tags_two
+# print(universals_tags)
+
+"""
+heading_generator(title, heading_type)
+heading_generator('Greeting', '1')
+<h1>Greeting</h1>
+
+heading_generator('Hi there','3')
+<h3>Hi There </h3>
+
+"""
+
+def heading_generator(title, heading_type):
+  return f'<h{heading_type}>{title}</h{heading_type}>'
+
+
+print(heading_generator('Hy Damian', '1'))
+print(heading_generator('Hy Ana', '2'))
+print(heading_generator('Hy Salvado', '3'))
+print(heading_generator('Hy Massimo', '4'))
