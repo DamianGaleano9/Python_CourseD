@@ -1053,9 +1053,9 @@ heading_generator('Hi there','3')
 #       my_list = ["Damian", "Salvador", "Massimo", "Ana", "Isis"]
 #       for x in my_list:
 #         print(x)
-    
+
 #         return my_list
-      
+
 # alphabet = 'abcdef'
 
 # for letter in alphabet:
@@ -1079,3 +1079,121 @@ heading_generator('Hi there','3')
 
 
 # Guide to Continue and Break in Python Loops#
+
+# usernames = [
+#     'John',
+#     'damian',
+#     'salvador',
+#     'hervin',
+#     'massimo'
+# ]
+
+# for name in usernames:
+#     if us
+
+# def loop_over_range():
+#     for num in range(1, 11, 3):
+#         print(num)
+
+
+# print(loop_over_range())
+
+
+# usernames = [
+#     'John',
+#     'damian',
+#     'salvador',
+#     'hervin',
+#     'massimo'
+# ]
+
+
+# for name in usernames:
+#     if name == "hervin":
+#         print(f'Sorry, {name} you are not allowed')
+#         continue
+#     else:
+#         print(f'{name} is allowed')
+
+# John is allowed
+# damian is allowed
+# salvador is allowed
+# Sorry, hervin you are not allowed
+# massimo is allowed
+
+
+# usernames = [
+#     'John',
+#     'damian',
+#     'salvador',
+#     'hervin',
+#     'massimo'
+# ]
+
+# for name in usernames:
+#     if name == "hervin":
+#         print(f'{name} was found in at index {usernames.index(name)}')
+#         break
+#     print(name)
+# # John
+# # damian
+# # salvador
+# # hervin was found in at index 3
+
+
+# vegetables = ["onion", "broccoli", "apple", "spinach"]
+# for vegetable in vegetables:
+#     if vegetable == "apple":
+#         print(f'{vegetable} is not a vegetable')
+#         break
+#     print(vegetable)
+
+
+# nums = list(range(1, 11))
+
+# # for num in nums:
+# #     print(num)
+
+# while len(nums) > 0:
+#     print(nums.pop())
+
+# guessing game #
+
+# def guessing_game():
+#     while True:
+#         print('what is yout guess?')
+#         guess =  input()
+
+#         if guess == '9':
+#             print('Your correctly guessed it!')
+#             return False
+#         else:
+#             print(f'No, {guess} is no the answer, please try again\n')
+
+# guessing_game()
+
+
+# def loop_using_while():
+#     dog_house = ["isis", "terrance", "lil", "cooki"] 
+#     counter = 0
+
+#     while len(dog_house) > 0:
+#         print(dog_house.pop())
+#         counter += 1
+    
+    
+#     return [dog_house, counter]
+# loop_using_while()
+
+def loop_using_while():
+    counter = 0
+    dog_house = ["isis", "lily", "Terrance", "silvestre"] # Put dog names here
+    
+    while len(dog_house) > counter:
+        print(dog_house)
+        counter += 1
+    
+    
+    return [dog_house, counter]
+
+loop_using_while()
