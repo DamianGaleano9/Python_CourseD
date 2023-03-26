@@ -1185,15 +1185,48 @@ heading_generator('Hi there','3')
 #     return [dog_house, counter]
 # loop_using_while()
 
-def loop_using_while():
-    counter = 0
-    dog_house = ["isis", "lily", "Terrance", "silvestre"] # Put dog names here
+# def loop_using_while():
+#     counter = 0
+#     dog_house = ["isis", "lily", "Terrance", "silvestre"] # Put dog names here
     
-    while len(dog_house) > counter:
-        print(dog_house)
-        counter += 1
+#     while len(counter < dog_house.len):
+#         print(dog_house)
+#         counter += 1
     
     
-    return [dog_house, counter]
+#     return [dog_house, counter]
 
-loop_using_while()
+# loop_using_while()
+
+
+# def loop_using_while():
+#     counter = 0
+
+#     dog_house = ["isis", "lily", "Terrance", "silvestre"]
+#     while len(dog_house) > counter:
+#             print(dog_house[counter])
+#             counter += 1
+    
+#     return [dog_house, counter]
+# loop_using_while()
+
+
+# How to Combine and Flatten 
+# Lists in Python with the For / In Loop #
+
+# legacy_customers = ['Damian', 'Ana']
+# new_customers = ['Massimo', 'Salvador']
+
+# for legacy_customer in legacy_customers:
+#     new_customers.append(legacy_customer)
+
+#     print(new_customers)
+
+
+list1 = [1, 2, 3, 4, 5, 6, 7]
+list2 = [9, 7, 8, 4]
+
+for list in list1:
+    list2.append(list)
+
+print(list2)
