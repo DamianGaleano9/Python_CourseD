@@ -1223,10 +1223,81 @@ heading_generator('Hi there','3')
 #     print(new_customers)
 
 
-list1 = [1, 2, 3, 4, 5, 6, 7]
-list2 = [9, 7, 8, 4]
+# list1 = [1, 2, 3, 4, 5, 6, 7]
+# list2 = [9, 7, 8, 4]
 
-for list in list1:
-    list2.append(list)
+# for list in list1:
+#     list2.append(list)
 
-print(list2)
+# print(list2)
+
+
+# names = ['Damian', 'Ana', 'Salvador']
+# numbers = ['2', '1', '2']
+
+# for name in names:
+#     numbers.append(name)
+#     print(numbers)
+
+
+# Introduction to Using List Comprehension in Python #
+
+# num_list = range(1, 11)
+# # cubed_nums = []
+
+# # for num in num_list:
+# #     cubed_nums.append(num ** 3)
+# cubed_nums = (num ** 3 for num in num_list)
+
+# print(list(num_list))
+# # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #
+# print(list(cubed_nums))
+# # [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000] #
+
+# num_list = range(1, 11)
+
+# even_numbers = []
+
+# for num in num_list:
+#     if num % 2 == 0:
+#         even_numbers.append(num)
+# num_list = range(1, 11)
+
+# even_numbers = [num for num in num_list if num % 2 == 0]
+
+# print(list(num_list))
+# print(even_numbers)
+# # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# # [2, 4, 6, 8, 10]
+
+
+# names = ["Damian", "Anna", "Salvador", "emil"]
+# # names_with = []
+
+# # for x in names:
+# #     if "e" in x:
+# #       names_with.append(x)
+# new_list = [x for x in names if "n" in x]
+
+# print(new_list)
+
+
+# fruits = ["Mango", "apple", "kiwi"]
+
+
+# new_fruits = [x for x in fruits if x != "apple"]
+# print(new_fruits)
+
+
+# new_list_ranges = [x for x in range(100) if x < 99]
+# print(list(new_list_ranges))
+
+
+def list_comprehension():
+    numbers = [1,2,3,4,5,6]
+    result = [x + 1 for x in numbers]  
+    
+    return result
+
+
+print(list_comprehension())
