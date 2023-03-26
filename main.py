@@ -1293,11 +1293,36 @@ heading_generator('Hi there','3')
 # print(list(new_list_ranges))
 
 
-def list_comprehension():
-    numbers = [1,2,3,4,5,6]
-    result = [x + 1 for x in numbers]  
+# def list_comprehension():
+#     numbers = [1,2,3,4,5,6]
+#     result = [x + 1 for x in numbers]  
     
-    return result
+#     return result
 
 
-print(list_comprehension())
+# print(list_comprehension())
+
+
+# Overview of Python Conditionals #
+
+# age = 190
+
+# if age < 18:
+#     print(f"You cannot entry")
+# elif age > 100:
+#     print(f"I'm sorry, you have {age} you need to be at least 18 years old")
+# else:
+#     print(f"You have {age} in the range to rent a car")
+    
+# answer = False
+
+# if answer == False:
+#   answer = True
+
+#   print(answer)
+
+language = "python"
+
+language_check = True if language == "python" else False
+print(language_check)
+
