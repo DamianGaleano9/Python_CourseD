@@ -1321,8 +1321,92 @@ heading_generator('Hi there','3')
 
 #   print(answer)
 
-language = "python"
+# language = "python"
 
-language_check = True if language == "python" else False
-print(language_check)
+# language_check = True if language == "python" else False
+# print(language_check)
 
+
+
+# Full List of Python Conditional Operators #
+
+# List of comparison operators
+# == Equality
+# != Inequality
+# <> Inequality (deprecated)
+# >  Greater than
+# >= Greater than or equal to
+# < Less than
+# <= Less than or equal to
+
+# username = ""
+
+# if username == "Damian":
+#     print(f"Welcome to {username}")
+# elif username != "Damian":
+#     print(f"Welcome to anothe user")
+# else:
+#     print("You shall not pass")
+
+# How to Check if a Value is Included in a Python String or List #
+
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# if 9 in nums:
+#     print(f'The number was found in index {nums.index(8)}')
+# else:
+#     print('The number was not found in index')
+
+# sentence = 'The quick brown fox jumped over the lazy Dog' 
+# word = 'Dog'
+
+
+# if word.lower() in sentence.lower():
+#     print('The word was found')
+# else: 
+#     print('The word was not in the sentence')
+
+
+# def value_in_string():
+#     sentence = 'Python is the best!'
+    
+#     if sentence in sentence:
+#       print('The word is in the sentence')
+#     else:
+#       print('The word is not in the sentence')
+
+
+# value_in_string()
+
+
+# How to Build Compound Conditionals in Python #
+
+# username = 'ana'
+# email = 'dj.damian@gmail.co'
+# password = 'thenorth'
+
+
+# if username == 'Damian' or email == 'dj.damian@gmail.com':
+#     print('Access permitted')
+# else:
+#     print('Access denied')
+
+
+# logged_in = True
+# standard_user = True
+
+# if logged_in and standard_user:
+#     print('You can access the admin dashboard')
+# else:
+#     print('You can only access the standard dashbord')
+
+
+
+def compound_conditional(number):
+    if number > 0 and number < 101:
+        print("Success!")
+    else:
+        print("Failure...")
+        
+compound_conditional(2)
