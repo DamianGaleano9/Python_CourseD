@@ -1396,17 +1396,173 @@ heading_generator('Hi there','3')
 # logged_in = True
 # standard_user = True
 
-# if logged_in and standard_user:
+# if logged_in and not standard_user:
 #     print('You can access the admin dashboard')
 # else:
 #     print('You can only access the standard dashbord')
 
 
 
-def compound_conditional(number):
-    if number > 0 and number < 101:
-        print("Success!")
-    else:
-        print("Failure...")
+# def compound_conditional(number):
+#     if number > 0 and number < 101:
+#         print("Success!")
+#     else:
+#         print("Failure...")
         
-compound_conditional(2)
+# compound_conditional(2)
+
+
+# Remove the First and Last Element from a Python List #
+
+
+
+
+
+
+
+# Basic Syntax for Creating Python Functions #
+
+
+# def full_name(first, last):
+#     print(f'{first} {last}')
+
+# full_name('Damian', "Galeano")
+# full_name('Stive', "Galeano")
+# full_name('Monica', "Galeano")
+# full_name('Hervin', "Galeano")
+
+
+# def auth(email, password):
+#     if email == 'dj.com' or password == 9:
+#         print("Authentication")
+#     else:
+#         print("denied")
+
+# auth('dj.com', 9)
+# auth('dj.com', 8)
+
+
+# def counter(max_value):
+#     for num in range(1, max_value):
+#         print(num)
+
+# counter(9)
+
+
+# def greeting():
+#     print("hello")
+    
+# greeting()
+
+
+# What Does it Mean to Return a Value from a Python Function? #
+
+# def full_name(first, last):
+#     return f'{first} {last}'
+
+# damian = full_name('Damian', 'Mazo')    
+
+# def greeting(name):
+#     print(f'Hi {name}')
+
+# greeting(damian)
+
+# def sum_two_numbers(a, b):
+#     return a + b
+
+# print(sum_two_numbers(1, 8))
+
+
+# def greeting(name):
+#     return f'Hello, {name}'
+    
+# print(greeting('Damian')) 
+
+
+
+
+
+# # damian = full_name('Damian', 'Mazo')  We get rid of this
+# def greeting(first, last): # Father function
+#     def full_name(): # We don't need arguments
+#         return f'{first} {last}'
+    
+#     print(f'Hi {full_name()}')
+
+# greeting('Damian', 'Mazo')
+
+
+# How to Nest Functions in Parent Functions in Python #
+
+
+
+# damian = full_name('Damian', 'Mazo')    
+
+# def greeting(first, last):
+#     def full_name():
+#         return f'{first} {last}'
+#     print(f'Hi {full_name()}')
+
+# greeting('Salvador', 'Mazo')
+# greeting('Salvador', 'Mazo')
+# greeting('Salvador', 'Mazo')
+# greeting('Salvador', 'Mazo')
+
+
+
+
+
+# def welcome_to_my_home(top, lower):
+#     def friends():
+#         return f'{top} {lower}'
+#     if top == 9 and lower == 9: return
+#     print(f'My best friends are {friends()}')
+
+# welcome_to_my_home('Salvador', 'Enrique')
+
+
+# def my_kids(*kids): # If dont nokw the number of parameters *
+    
+#     print(f'The youngest is {list(kids[2])}')
+
+# my_kids('Salvador', 'majo', 'massimo')
+
+# def fruits(fruit1, fruit2, fruit3):
+#     def juice_mix():
+#         return f'{fruit1}, {fruit2}, {fruit3}'
+#     print (f'Opcion to choose {juice_mix()}')
+#     # print (f'The juice mix fruit is {juice_mix()}')
+
+# fruits("mango", "pera", "banana") #sintaxis key = value
+# # The best juice mix fruit is mango, pera, banana #
+
+
+# def sum(a, b, c= 200):
+#     return a + b + c
+
+# print(sum(1, 9))
+
+# Finding the highest and lowest number #
+
+# numeros = [1, 2, 32, 4, 53, 6]
+
+# numeros_mas_alto = max(numeros)
+# print(numeros_mas_alto)
+
+
+# numeros_mas_bajo = min(numeros)
+# print(numeros_mas_bajo)
+
+# rounding to 6 decimal places #
+
+
+# numeros = round(12.39289273,6)
+# print(numeros)
+
+initial_count = 0
+
+def counter(initial_count):
+    for x in range(1, 10):
+        return initial_count
+print(counter())
+
