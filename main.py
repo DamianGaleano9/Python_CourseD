@@ -1559,10 +1559,103 @@ heading_generator('Hi there','3')
 # numeros = round(12.39289273,6)
 # print(numeros)
 
-initial_count = 0
+# def counter(initial_counter):
+#     counter = 0
+#     initial_counter += 1
+#     return initial_counter
 
-def counter(initial_count):
-    for x in range(1, 10):
-        return initial_count
-print(counter())
+# print(counter(1))
 
+
+# My solution #
+
+# initial_counter = 0
+
+# def counter(initial_counter):
+#     initial_counter += 1
+#     return initial_counter
+    
+# print(counter(1))
+
+
+# Solution for they #
+
+# def counter(initial_count = 0):
+#     initial_count += 1
+#     return initial_count
+
+# print(counter(8))
+
+# def full_name(first, last):
+#     print(f'{first} {last}')DEV
+
+# print(full_name(last = "Salvador", first = "Damian"))
+
+# def named_arguments_practice(sequence):
+#     sequence()
+#     return named_arguments_practice
+    
+# named_arguments_practice()
+
+
+# def greeting(*name):
+#     print('Hi ' + ' '.join(name))
+
+# greeting('Damian', 'Galeano')
+# greeting('Damian', 'Mazo ' 'Galeano')
+# greeting('Salvador', 'Mazo ' 'Lopera')
+
+
+# def greeting(**kwargs):
+#     if kwargs:
+#         print(f"Hi {kwargs['first_name']} {kwargs['last_name']}, have a gret day")
+#     else:
+#         print(f"Hi Guest, have a great day")
+
+# greeting(first_name = "Damian", last_name= "Galeano")
+# greeting()
+
+# def suma(numero1, numero2):
+#     return numero1 + numero2
+
+# resultado = suma(1, 99)
+
+# print(resultado)
+
+
+# resultado2 = resultado + suma(1, 4)
+# print(resultado2)
+
+
+# colores = ["rojo", "amarillo", "verde"]
+
+
+# def añadir_color(color):
+#     colores.append(color)
+#     return color
+
+
+# añadir_color("azul")
+# añadir_color("purpura")
+# añadir_color("lila")
+# añadir_color("marron")
+# # ['rojo', 'amarillo', 'verde', 'azul', 'purpura', 'lila', 'marron'] #
+
+
+
+# print(colores)
+
+def greeting(time_day, *args, **kwargs):
+    print(f"Hi {' '.join(args)}, I hope you have a good day today {time_day}")
+
+    if kwargs:
+        print('Your task for today are')
+        for key, val in kwargs.items():
+            print(f'{key} -> {val}')
+
+
+greeting('Morning', 
+         'Damian', 'Galeano',
+         first = 'Take a Shower',
+         second = 'eat breakfast',
+         third  = 'programming')
