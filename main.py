@@ -1174,26 +1174,26 @@ heading_generator('Hi there','3')
 
 
 # def loop_using_while():
-#     dog_house = ["isis", "terrance", "lil", "cooki"] 
+#     dog_house = ["isis", "terrance", "lil", "cooki"]
 #     counter = 0
 
 #     while len(dog_house) > 0:
 #         print(dog_house.pop())
 #         counter += 1
-    
-    
+
+
 #     return [dog_house, counter]
 # loop_using_while()
 
 # def loop_using_while():
 #     counter = 0
 #     dog_house = ["isis", "lily", "Terrance", "silvestre"] # Put dog names here
-    
+
 #     while len(counter < dog_house.len):
 #         print(dog_house)
 #         counter += 1
-    
-    
+
+
 #     return [dog_house, counter]
 
 # loop_using_while()
@@ -1206,12 +1206,12 @@ heading_generator('Hi there','3')
 #     while len(dog_house) > counter:
 #             print(dog_house[counter])
 #             counter += 1
-    
+
 #     return [dog_house, counter]
 # loop_using_while()
 
 
-# How to Combine and Flatten 
+# How to Combine and Flatten
 # Lists in Python with the For / In Loop #
 
 # legacy_customers = ['Damian', 'Ana']
@@ -1295,8 +1295,8 @@ heading_generator('Hi there','3')
 
 # def list_comprehension():
 #     numbers = [1,2,3,4,5,6]
-#     result = [x + 1 for x in numbers]  
-    
+#     result = [x + 1 for x in numbers]
+
 #     return result
 
 
@@ -1313,7 +1313,7 @@ heading_generator('Hi there','3')
 #     print(f"I'm sorry, you have {age} you need to be at least 18 years old")
 # else:
 #     print(f"You have {age} in the range to rent a car")
-    
+
 # answer = False
 
 # if answer == False:
@@ -1325,7 +1325,6 @@ heading_generator('Hi there','3')
 
 # language_check = True if language == "python" else False
 # print(language_check)
-
 
 
 # Full List of Python Conditional Operators #
@@ -1358,19 +1357,19 @@ heading_generator('Hi there','3')
 # else:
 #     print('The number was not found in index')
 
-# sentence = 'The quick brown fox jumped over the lazy Dog' 
+# sentence = 'The quick brown fox jumped over the lazy Dog'
 # word = 'Dog'
 
 
 # if word.lower() in sentence.lower():
 #     print('The word was found')
-# else: 
+# else:
 #     print('The word was not in the sentence')
 
 
 # def value_in_string():
 #     sentence = 'Python is the best!'
-    
+
 #     if sentence in sentence:
 #       print('The word is in the sentence')
 #     else:
@@ -1402,22 +1401,16 @@ heading_generator('Hi there','3')
 #     print('You can only access the standard dashbord')
 
 
-
 # def compound_conditional(number):
 #     if number > 0 and number < 101:
 #         print("Success!")
 #     else:
 #         print("Failure...")
-        
+
 # compound_conditional(2)
 
 
 # Remove the First and Last Element from a Python List #
-
-
-
-
-
 
 
 # Basic Syntax for Creating Python Functions #
@@ -1451,7 +1444,7 @@ heading_generator('Hi there','3')
 
 # def greeting():
 #     print("hello")
-    
+
 # greeting()
 
 
@@ -1460,7 +1453,7 @@ heading_generator('Hi there','3')
 # def full_name(first, last):
 #     return f'{first} {last}'
 
-# damian = full_name('Damian', 'Mazo')    
+# damian = full_name('Damian', 'Mazo')
 
 # def greeting(name):
 #     print(f'Hi {name}')
@@ -1475,18 +1468,15 @@ heading_generator('Hi there','3')
 
 # def greeting(name):
 #     return f'Hello, {name}'
-    
-# print(greeting('Damian')) 
 
-
-
+# print(greeting('Damian'))
 
 
 # # damian = full_name('Damian', 'Mazo')  We get rid of this
 # def greeting(first, last): # Father function
 #     def full_name(): # We don't need arguments
 #         return f'{first} {last}'
-    
+
 #     print(f'Hi {full_name()}')
 
 # greeting('Damian', 'Mazo')
@@ -1495,8 +1485,7 @@ heading_generator('Hi there','3')
 # How to Nest Functions in Parent Functions in Python #
 
 
-
-# damian = full_name('Damian', 'Mazo')    
+# damian = full_name('Damian', 'Mazo')
 
 # def greeting(first, last):
 #     def full_name():
@@ -1509,9 +1498,6 @@ heading_generator('Hi there','3')
 # greeting('Salvador', 'Mazo')
 
 
-
-
-
 # def welcome_to_my_home(top, lower):
 #     def friends():
 #         return f'{top} {lower}'
@@ -1522,7 +1508,7 @@ heading_generator('Hi there','3')
 
 
 # def my_kids(*kids): # If dont nokw the number of parameters *
-    
+
 #     print(f'The youngest is {list(kids[2])}')
 
 # my_kids('Salvador', 'majo', 'massimo')
@@ -1574,7 +1560,7 @@ heading_generator('Hi there','3')
 # def counter(initial_counter):
 #     initial_counter += 1
 #     return initial_counter
-    
+
 # print(counter(1))
 
 
@@ -1594,7 +1580,7 @@ heading_generator('Hi there','3')
 # def named_arguments_practice(sequence):
 #     sequence()
 #     return named_arguments_practice
-    
+
 # named_arguments_practice()
 
 
@@ -1642,20 +1628,43 @@ heading_generator('Hi there','3')
 # # ['rojo', 'amarillo', 'verde', 'azul', 'purpura', 'lila', 'marron'] #
 
 
-
 # print(colores)
 
-def greeting(time_day, *args, **kwargs):
-    print(f"Hi {' '.join(args)}, I hope you have a good day today {time_day}")
+# def greeting(time_day, *args, **kwargs):
+#     print(f"Hi {' '.join(args)}, I hope you have a good day today {time_day}")
 
-    if kwargs:
-        print('Your task for today are')
-        for key, val in kwargs.items():
-            print(f'{key} -> {val}')
+#     if kwargs:
+#         print('Your task for today are')
+#         for key, val in kwargs.items():
+#             print(f'{key} -> {val}')
 
 
-greeting('Morning', 
-         'Damian', 'Galeano',
-         first = 'Take a Shower',
-         second = 'eat breakfast',
-         third  = 'programming')
+# greeting('Morning',
+#          'Damian', 'Galeano',
+#          first = 'Take a Shower',
+#          second = 'eat breakfast',
+#          third  = 'programming')
+
+
+# def lambda_practice(name):
+#     greeting = lambda name: f'{name}'
+#     print(f'Hi {name}')
+
+
+#     return greeting
+
+# (lambda_practice('Damian'))
+
+def my_program(number):
+    for number in range(1, 101):
+        if number % 5 == 0 and number % 3 == 0:
+            print('fizzbuzz')
+        elif number % 3 == 0:
+            print('fizz')
+        elif number % 5 == 0:
+            print('buzz')
+    else:
+        print(number)
+
+
+print(my_program(1))
