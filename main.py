@@ -1655,16 +1655,29 @@ heading_generator('Hi there','3')
 
 # (lambda_practice('Damian'))
 
-def my_program(number):
-    for number in range(1, 101):
-        if number % 5 == 0 and number % 3 == 0:
-            print('fizzbuzz')
-        elif number % 3 == 0:
-            print('fizz')
-        elif number % 5 == 0:
-            print('buzz')
-    else:
-        print(number)
+# def my_program(number):
+#     for number in range(1, 100):
+#         if number % 5 == 0 and number % 3 == 0:
+#             print('fizzbuzz')
+#         elif number % 3 == 0:
+#             print('fizz')
+#         elif number % 5 == 0:
+#             print('buzz')
+#     else:
+#         print(number)
 
 
-print(my_program(1))
+# my_program(1)
+
+
+# def fizz_buzz(num_max):
+#     for num in range(1, num_max + 1):
+#         if num % 5 == 0 and num % 3 == 0:
+#             print('fizzBuzz')
+#         elif num % 3 == 0:
+#             print('buzz')
+#         elif num % 5 == 0:
+#             print('fizz')
+#         else:
+#             print(num)
+# fizz_buzz(10)
