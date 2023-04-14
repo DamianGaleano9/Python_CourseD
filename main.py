@@ -1771,16 +1771,46 @@ heading_generator('Hi there','3')
 #         break
 #     print(username)
     
-2
-def guessing_game():
-    while True:
-        print('What is your guess?')
-        guess = input()
+# def guessing_game():
+#     while True:
+#         print('What is your guess?')
+#         guess = input()
     
-        if guess == '9':
-            print(f'Yeaaaaah the {guess} number guess is correctly')
-            return False
-        else:
-            print(f'the number {guess}, is not correct, You need to try again')
+#         if guess == '9':
+#             print(f'Yeaaaaah the {guess} number guess is correctly')
+#             return False
+#         else:
+#             print(f'the number {guess}, is not correct, You need to try again')
     
-(guessing_game())
+# (guessing_game())
+
+# legacy_customers = ['Damian', 'Salvador', 'masso', 'salvador', 'mom']
+# new_customers = ['Ana', 'Massimo']
+
+
+# for legacy_customer in legacy_customers:
+#     new_customers.append(legacy_customer)
+
+# print(legacy_customers)
+
+# num_list = range(1, 11)
+# cubed_nums = []
+
+# for num in num_list:
+#     cubed_nums.append(num ** 3)
+# cubed_nums = [num ** 3 for num in num_list]
+
+# print(num_list) 
+# print(cubed_nums)
+
+num_list = range(1, 10)
+even_numbers = []
+
+# for num in  num_list:
+#     if num % 2 == 0:
+#         even_numbers.append(num)
+        
+even_numbers = [num for num in num_list if num % 2 == 0]
+
+print(list(num_list))
+print(list(even_numbers))
