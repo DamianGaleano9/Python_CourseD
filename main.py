@@ -1681,3 +1681,106 @@ heading_generator('Hi there','3')
 #         else:
 #             print(num)
 # fizz_buzz(10)
+
+
+# area_triangle = lambda base , altura: base * altura / 2
+
+# print(area_triangle(10, 20))
+
+
+# print(area_triangle(2, 9))
+
+
+# tags_one = {
+#   'python',
+#   'coding',
+#   'tutorials',
+#   'coding'
+# }
+
+# tags_two = {
+#   'ruby',
+#   'coding',
+#   'tutorials',
+#   'development'
+# }
+
+# merge_tags = tags_one | tags_two
+
+# exclusive_tags_one = tags_one - tags_two
+# exclusive_tags_two = tags_two - tags_one
+# universals_tags = tags_one & tags_two
+
+
+# print(universals_tags)
+# print(exclusive_tags_two)
+# print(exclusive_tags_one)
+# print(merge_tags)
+
+# players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+
+
+# for player in players:
+#     print(player)
+
+# players = {
+#   '2b': 'Altuve',
+#   '3b': 'Bregman',
+#   'ss': 'Correa',
+#   'dh': 'Gattis'
+# }
+
+
+# for position, player in players.items():
+#     print('position', position)
+#     print('player', player)
+
+
+# homes = {
+#     'dad': 'Damian',
+#     'mom': 'Ana',
+#     'sons':  {
+#         'first': 'Salva',
+#         'second': 'Massimo',
+#     }
+# }
+
+# homes['sons']['first'] = 'Salvador'
+# print(homes['sons']['first'])
+# print(homes)
+
+
+# for position, player in homes.items():
+#     print('position', position)
+
+# for num in range(1, 10):
+#     print(num)
+
+
+# usernames = [   	
+#     'damian',
+#     'mom',
+#     'stiven',
+#     'massimo',
+#     'salvador'
+# ]
+
+# for username in usernames:
+#     if username == 'massimo':
+#         print(f'{username}, was found in {usernames.index(username)}')
+#         break
+#     print(username)
+    
+2
+def guessing_game():
+    while True:
+        print('What is your guess?')
+        guess = input()
+    
+        if guess == '9':
+            print(f'Yeaaaaah the {guess} number guess is correctly')
+            return False
+        else:
+            print(f'the number {guess}, is not correct, You need to try again')
+    
+(guessing_game())
