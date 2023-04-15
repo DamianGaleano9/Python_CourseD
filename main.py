@@ -1803,14 +1803,42 @@ heading_generator('Hi there','3')
 # print(num_list) 
 # print(cubed_nums)
 
-num_list = range(1, 10)
-even_numbers = []
+# num_list = range(1, 10)
+# even_numbers = []
 
-# for num in  num_list:
-#     if num % 2 == 0:
-#         even_numbers.append(num)
+# # for num in  num_list:
+# #     if num % 2 == 0:
+# #         even_numbers.append(num)
         
-even_numbers = [num for num in num_list if num % 2 == 0]
+# even_numbers = [num for num in num_list if num % 2 == 0]
 
-print(list(num_list))
-print(list(even_numbers))
+# print(list(num_list))
+# print(list(even_numbers))
+
+# role = 'guest'
+
+# if role == 'admin':
+#     auth = 'Can acces'
+# else:
+#     auth = 'Cannot acces'
+
+# print(auth)
+
+# i = 0
+
+# while i < 20:
+#     print(i)
+#     if i == 9:
+#         break
+#     i += 1´
+
+
+
+# name = full_name('Damian', 'Mazo')
+
+def greeting(first, last):
+    def full_name():
+        return (f'{first}, {last}')
+    print(f'hy {full_name()}')
+
+greeting('Damian', 'Mazoo')
