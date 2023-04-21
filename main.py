@@ -1757,7 +1757,7 @@ heading_generator('Hi there','3')
 #     print(num)
 
 
-# usernames = [   	
+# usernames = [
 #     'damian',
 #     'mom',
 #     'stiven',
@@ -1770,18 +1770,18 @@ heading_generator('Hi there','3')
 #         print(f'{username}, was found in {usernames.index(username)}')
 #         break
 #     print(username)
-    
+
 # def guessing_game():
 #     while True:
 #         print('What is your guess?')
 #         guess = input()
-    
+
 #         if guess == '9':
 #             print(f'Yeaaaaah the {guess} number guess is correctly')
 #             return False
 #         else:
 #             print(f'the number {guess}, is not correct, You need to try again')
-    
+
 # (guessing_game())
 
 # legacy_customers = ['Damian', 'Salvador', 'masso', 'salvador', 'mom']
@@ -1800,7 +1800,7 @@ heading_generator('Hi there','3')
 #     cubed_nums.append(num ** 3)
 # cubed_nums = [num ** 3 for num in num_list]
 
-# print(num_list) 
+# print(num_list)
 # print(cubed_nums)
 
 # num_list = range(1, 10)
@@ -1809,7 +1809,7 @@ heading_generator('Hi there','3')
 # # for num in  num_list:
 # #     if num % 2 == 0:
 # #         even_numbers.append(num)
-        
+
 # even_numbers = [num for num in num_list if num % 2 == 0]
 
 # print(list(num_list))
@@ -1833,12 +1833,102 @@ heading_generator('Hi there','3')
 #     i += 1´
 
 
-
 # name = full_name('Damian', 'Mazo')
 
-def greeting(first, last):
-    def full_name():
-        return (f'{first}, {last}')
-    print(f'hy {full_name()}')
+# def greeting(first, last):
+#     def full_name():
+#         return (f'{first}, {last}')
+#     print(f'hy {full_name()}')
 
-greeting('Damian', 'Mazoo')
+# greeting('Damian', 'Mazoo')
+
+
+# def some_function(collection):
+#     collection.append(1)
+#     return collection
+
+# some_function('1')
+
+# def greeting(*args):
+#     print('Hi '+ '-'.join(args))
+
+# greeting('Damian', 'Mazo', 'Galeano')
+# greeting('Ana', 'Maria', 'Lopera', 'perez')
+
+# class Perro:
+
+#     #Constructor
+#     def __init__(self, name):
+#         self.tamaño = None
+#         self.edad = 0
+#         self.color = None
+#         self.raza = None
+#         self.name = name
+
+#     #Methods
+#     def ladrar(self):
+#         print('El perro esta ladrando')
+
+#     def comer(self):
+#         print('El perro esta comiendo')
+
+#     def jugar(self):
+#         print(f'El perro esta jugando')
+
+#     def cambiar_name(self, name):
+#         print(f'El nombre del perro es {name}')
+
+#     #Instant
+
+# mi_perro = Perro()
+# mi_perrra_isis = Perro()
+
+
+# mi_perro.comer()
+# mi_perrra_isis.cambiar_name('isis')
+
+
+# Starter code
+# class Garage:
+#   def __init__(self, size):
+#     self.size = size
+#     self.cars = ["Ram", "Model 3"]
+
+#   def open_door(self):
+#     return "The door opens"
+
+# home = Garage(2)
+# # End of starter code
+
+# # Setter goes here
+# home.cars =
+
+
+# print(get_cars = home.cars )
+
+
+def function_dec(fun_parametro):
+    # Acciones que decoran
+    def function_int():
+        print('Vamos a relizar el calculo')
+
+        fun_parametro()
+
+        print('hemos terminado el calculo')
+
+    return function_int
+
+
+# Decorator
+@function_dec
+def suma():
+    print(10 + 20)
+
+
+@function_dec
+def resta():
+    print(10 - 90)
+
+
+suma()
+resta()
