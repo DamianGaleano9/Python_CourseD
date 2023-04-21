@@ -1907,34 +1907,113 @@ heading_generator('Hi there','3')
 # print(get_cars = home.cars )
 
 
-def function_dec(fun_parametro):
-    # Acciones que decoran
-    def function_int(*args, **kwargs):
-        print('Vamos a relizar el calculo matematico')
+# def function_dec(fun_parametro):
+#     # Acciones que decoran
+#     def function_int(*args, **kwargs):
+#         print('Vamos a relizar el calculo matematico')
 
-        fun_parametro(*args, **kwargs)
+#         fun_parametro(*args, **kwargs)
 
-        print('hemos terminado el calculo')
+#         print('hemos terminado el calculo')
 
-    return function_int
-
-
-# Decorator
-@function_dec
-def suma(num1, num2, num3):
-    print(num1 + num2 + num3)
+#     return function_int
 
 
-@function_dec
-def resta(num1, num2, num3):
-    print(num1 - num2 - num3)
+# # Decorator
 
 
-@function_dec
-def potencia(base, exponente):
-    print(pow(base, exponente))
+# @function_dec
+# def suma(num1, num2, num3):
+#     print(num1 + num2 + num3)
 
 
-suma(6, 2, 1)
-resta(10, 1, 0)
-potencia(base=2, exponente=3)
+# @function_dec
+# def resta(num1, num2, num3):
+#     print(num1 - num2 - num3)
+
+
+# @function_dec
+# def potencia(base, exponente):
+#     print(pow(base, exponente))
+
+
+# suma(6, 2, 1)
+# resta(10, 1, 0)
+# potencia(base=2, exponente=3)
+
+
+# Property Dec
+
+# class Employe:
+#     def __init__(self, first, last, title, department):
+#         self.first = first
+#         self.last = last
+#         self.title = title
+#         self.department = department
+
+#     return self
+
+
+# class Garage:
+#     def __init__(self, size):
+#         #   Protect the size attribute
+#         self._size = size
+#         self.cars = []
+
+#     # add decorator here
+#     @property
+#     def size(self):
+#         return self._size
+
+#     def open_door(self):
+#         return "The door opens"
+
+# home = Garage(2)
+
+# print(home.size)
+
+
+class Cuenta:
+    def __init__(self, pro, cuenta, mon):
+        self.__propietario = pro
+        self.__cuenta = cuenta
+        self.__moneda = mon
+
+    # Getters
+
+    def get_Proietario(self):
+        return self.__propietario
+
+    def get_Cuenta(self):
+        return self.__cuenta
+
+    def get_Moneda(self):
+        return self.__moneda
+
+    # Setter
+
+    def set_Moneda(self, moneda):
+        self.__moneda = moneda
+
+
+    def set_pro(self, pro):
+        self.__pro = pro
+
+
+
+cuenta1 = Cuenta('Damian', 100000, 'eur')
+cuenta2 = Cuenta('Ana', 900000, 'dol')
+
+
+print(cuenta1.get_Cuenta())
+print(cuenta2.get_Cuenta())
+
+
+print(cuenta1.get_Moneda())
+print(cuenta2.get_Moneda())
+
+print(cuenta1.get_Proietario())
+print(cuenta2.get_Proietario())
+
+cuenta2.set_Moneda('oro')
+print(cuenta2.get_Moneda())
