@@ -1901,7 +1901,7 @@ heading_generator('Hi there','3')
 # # End of starter code
 
 # # Setter goes here
-# home.cars =
+# home.cars = 0
 
 
 # print(get_cars = home.cars )
@@ -1909,10 +1909,10 @@ heading_generator('Hi there','3')
 
 def function_dec(fun_parametro):
     # Acciones que decoran
-    def function_int():
-        print('Vamos a relizar el calculo')
+    def function_int(*args, **kwargs):
+        print('Vamos a relizar el calculo matematico')
 
-        fun_parametro()
+        fun_parametro(*args, **kwargs)
 
         print('hemos terminado el calculo')
 
@@ -1921,14 +1921,20 @@ def function_dec(fun_parametro):
 
 # Decorator
 @function_dec
-def suma():
-    print(10 + 20)
+def suma(num1, num2, num3):
+    print(num1 + num2 + num3)
 
 
 @function_dec
-def resta():
-    print(10 - 90)
+def resta(num1, num2, num3):
+    print(num1 - num2 - num3)
 
 
-suma()
-resta()
+@function_dec
+def potencia(base, exponente):
+    print(pow(base, exponente))
+
+
+suma(6, 2, 1)
+resta(10, 1, 0)
+potencia(base=2, exponente=3)
