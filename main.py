@@ -1973,47 +1973,63 @@ heading_generator('Hi there','3')
 # print(home.size)
 
 
-class Cuenta:
-    def __init__(self, pro, cuenta, mon):
-        self.__propietario = pro
-        self.__cuenta = cuenta
-        self.__moneda = mon
+# class Cuenta:
+#     def __init__(self, pro, cuenta, mon):
+#         self.__propietario = pro
+#         self.__cuenta = cuenta
+#         self.__moneda = mon
 
-    # Getters
+#     # Getters
 
-    def get_Proietario(self):
-        return self.__propietario
+#     def get_Proietario(self):
+#         return self.__propietario
 
-    def get_Cuenta(self):
-        return self.__cuenta
+#     def get_Cuenta(self):
+#         return self.__cuenta
 
-    def get_Moneda(self):
-        return self.__moneda
+#     def get_Moneda(self):
+#         return self.__moneda
 
-    # Setter
+#     # Setter
 
-    def set_Moneda(self, moneda):
-        self.__moneda = moneda
-
-
-    def set_pro(self, pro):
-        self.__pro = pro
+#     def set_Moneda(self, moneda):
+#         self.__moneda = moneda
 
 
-
-cuenta1 = Cuenta('Damian', 100000, 'eur')
-cuenta2 = Cuenta('Ana', 900000, 'dol')
-
-
-print(cuenta1.get_Cuenta())
-print(cuenta2.get_Cuenta())
+#     def set_pro(self, pro):
+#         self.__pro = pro
 
 
-print(cuenta1.get_Moneda())
-print(cuenta2.get_Moneda())
 
-print(cuenta1.get_Proietario())
-print(cuenta2.get_Proietario())
+# cuenta1 = Cuenta('Damian', 100000, 'eur')
+# cuenta2 = Cuenta('Ana', 900000, 'dol')
 
-cuenta2.set_Moneda('oro')
-print(cuenta2.get_Moneda())
+
+# print(cuenta1.get_Cuenta())
+# print(cuenta2.get_Cuenta())
+
+
+# print(cuenta1.get_Moneda())
+# print(cuenta2.get_Moneda())
+
+# print(cuenta1.get_Proietario())
+# print(cuenta2.get_Proietario())
+
+# cuenta2.set_Moneda('oro')
+# print(cuenta2.get_Moneda())
+
+
+# def return_valores(num):
+#     print('Hola mundo')
+#     return num
+
+# print(return_valores(2))
+
+
+def generator(*args):
+    for valor in args:
+        yield valor * 10
+    
+
+for valor in generator(1,2,3,4,5,6,7,8,9):
+    print(valor)
