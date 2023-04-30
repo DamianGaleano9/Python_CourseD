@@ -2065,25 +2065,47 @@ heading_generator('Hi there','3')
 #Polymorphism
 
 
-class Html:
-    def __init__(self, content):
-        self.content = content 
+# class Html:
+#     def __init__(self, content):
+#         self.content = content 
 
     
-    def render(self):
-        raise NotImplementedError('Sub class must implement render method')
+#     def render(self):
+#         raise NotImplementedError('Sub class must implement render method')
 
 
-class Heading(Html):
-    def render(self):
-        return f'<div>{self.content}</div>'
+# class Heading(Html):
+#     def render(self):
+#         return f'<div>{self.content}</div>'
     
-class Div(Html):
-    def render(self):
-        return f'<div>{self.content}</div>'
+# class Div(Html):
+#     def render(self):
+#         return f'<div>{self.content}</div>'
     
 
-tags = [Div('Some content for my page'), Heading('Some big heading'), Div('Another content')]
+# tags = [Div('Some content for my page'), Heading('Some big heading'), Div('Another content')]
 
-for tag in tags:
-    print(tag.render())
+# for tag in tags:
+#     print(tag.render())
+
+class Coche():
+    def desplazamiento(self):
+        print('Me desplazo con cuatro ruedas')
+
+class Moto():
+    def desplazamiento(self):
+        print('me desplazo con dos ruedas')
+
+class Camion():
+    def desplazamiento(self):
+        print('Me desplazo con seis ruedas')
+
+
+
+def desplazamientoVehiculo(vehiculo):
+    vehiculo.desplazamiento()
+
+
+miVehiculo = Camion()
+
+desplazamientoVehiculo(miVehiculo)
