@@ -2000,7 +2000,6 @@ heading_generator('Hi there','3')
 #         self.__pro = pro
 
 
-
 # cuenta1 = Cuenta('Damian', 100000, 'eur')
 # cuenta2 = Cuenta('Ana', 900000, 'dol')
 
@@ -2026,10 +2025,65 @@ heading_generator('Hi there','3')
 # print(return_valores(2))
 
 
-def generator(*args):
-    for valor in args:
-        yield valor * 10
+# def generator(*args):
+#     for valor in args:
+#         yield valor * 10
+
+
+# for valor in generator(1,2,3,4,5,6,7,8,9):
+#     print(valor)
+
+
+# class User:
+#     def __init__(self, email, first_name, last_name):
+#         self.email = email
+#         self.first_name = first_name
+#         self.last_name = last_name
+
+#     def greeting(self):
+#         return f'Hi {self.first_name} {self.last_name}'
+
+
+# class AdminUser(User):
+#     def active_users(self):
+#         return '500'
     
 
-for valor in generator(1,2,3,4,5,6,7,8,9):
-    print(valor)
+
+# Damian = AdminUser('dj.damian', 'damian', 'galeano')
+# Ana = User('anita_lop@', 'Ana', 'lop')
+# Massi = AdminUser(None, 'Massi', 'Mazo')
+
+# print(Damian.active_users())
+# print(Damian.greeting())
+# print(Massi.greeting())
+# print(Massi.active_users())
+# print(Massi.email)
+# print(Damian.last_name)
+
+
+#Polymorphism
+
+
+class Html:
+    def __init__(self, content):
+        self.content = content 
+
+    
+    def render(self):
+        raise NotImplementedError('Sub class must implement render method')
+
+
+class Heading(Html):
+    def render(self):
+        return f'<div>{self.content}</div>'
+    
+class Div(Html):
+    def render(self):
+        return f'<div>{self.content}</div>'
+    
+
+tags = [Div('Some content for my page'), Heading('Some big heading'), Div('Another content')]
+
+for tag in tags:
+    print(tag.render())
