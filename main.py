@@ -2088,24 +2088,81 @@ heading_generator('Hi there','3')
 # for tag in tags:
 #     print(tag.render())
 
-class Coche():
-    def desplazamiento(self):
-        print('Me desplazo con cuatro ruedas')
+# class Coche():
+#     def desplazamiento(self):
+#         print('Me desplazo con cuatro ruedas')
 
-class Moto():
-    def desplazamiento(self):
-        print('me desplazo con dos ruedas')
+# class Moto():
+#     def desplazamiento(self):
+#         print('me desplazo con dos ruedas')
 
-class Camion():
-    def desplazamiento(self):
-        print('Me desplazo con seis ruedas')
-
-
-
-def desplazamientoVehiculo(vehiculo):
-    vehiculo.desplazamiento()
+# class Camion():
+#     def desplazamiento(self):
+#         print('Me desplazo con seis ruedas')
 
 
-miVehiculo = Camion()
 
-desplazamientoVehiculo(miVehiculo)
+# def desplazamientoVehiculo(vehiculo):
+#     vehiculo.desplazamiento()
+
+
+# miVehiculo = Camion()
+
+# desplazamientoVehiculo(miVehiculo)
+
+
+# class Tomato:
+#     def tipo(self):
+#         print('Vegetable')
+
+#     def color(self):
+#         print('Red')
+    
+# class Apple:
+#     def tipo(self):
+#         print('Fruit')
+
+#     def color(self):
+#         print('Green')
+
+
+# def function(par):
+#     par.tipo()
+#     par.color()
+
+
+# myTomato = Tomato()
+# myApple = Apple()
+
+
+# function(myTomato)
+# function(myApple)
+
+
+class Heading:
+    def __init__(self, content):
+        self.content = content
+    
+
+    def render(self):
+        return f'<h1>{self.content}</h1>'
+    
+
+class Div:
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        return f'<div>{self.content}</div>'
+    
+div_one = Div('My Content')
+heading = Heading('My heading')
+div_two = Div('Another Div')
+
+
+def html_render(param):
+    print(param.render())
+
+html_render(div_one)
+html_render(heading)
+html_render(div_two)
