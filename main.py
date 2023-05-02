@@ -2047,7 +2047,6 @@ heading_generator('Hi there','3')
 # class AdminUser(User):
 #     def active_users(self):
 #         return '500'
-    
 
 
 # Damian = AdminUser('dj.damian', 'damian', 'galeano')
@@ -2062,14 +2061,14 @@ heading_generator('Hi there','3')
 # print(Damian.last_name)
 
 
-#Polymorphism
+# Polymorphism
 
 
 # class Html:
 #     def __init__(self, content):
-#         self.content = content 
+#         self.content = content
 
-    
+
 #     def render(self):
 #         raise NotImplementedError('Sub class must implement render method')
 
@@ -2077,11 +2076,11 @@ heading_generator('Hi there','3')
 # class Heading(Html):
 #     def render(self):
 #         return f'<div>{self.content}</div>'
-    
+
 # class Div(Html):
 #     def render(self):
 #         return f'<div>{self.content}</div>'
-    
+
 
 # tags = [Div('Some content for my page'), Heading('Some big heading'), Div('Another content')]
 
@@ -2101,7 +2100,6 @@ heading_generator('Hi there','3')
 #         print('Me desplazo con seis ruedas')
 
 
-
 # def desplazamientoVehiculo(vehiculo):
 #     vehiculo.desplazamiento()
 
@@ -2117,7 +2115,7 @@ heading_generator('Hi there','3')
 
 #     def color(self):
 #         print('Red')
-    
+
 # class Apple:
 #     def tipo(self):
 #         print('Fruit')
@@ -2139,30 +2137,46 @@ heading_generator('Hi there','3')
 # function(myApple)
 
 
-class Heading:
-    def __init__(self, content):
-        self.content = content
-    
-
-    def render(self):
-        return f'<h1>{self.content}</h1>'
-    
-
-class Div:
-    def __init__(self, content):
-        self.content = content
-
-    def render(self):
-        return f'<div>{self.content}</div>'
-    
-div_one = Div('My Content')
-heading = Heading('My heading')
-div_two = Div('Another Div')
+#Polymorphic Function
 
 
-def html_render(param):
-    print(param.render())
+# class Heading:
+#     def __init__(self, content):
+#         self.content = content
 
-html_render(div_one)
-html_render(heading)
-html_render(div_two)
+#     def render(self):
+#         return f'<h1>{self.content}</h1>'
+
+
+# class Div:
+#     def __init__(self, content):
+#         self.content = content
+
+#     def render(self):
+#         return f'<div>{self.content}</div>'
+
+
+# div_one = Div('My Content')
+# heading = Heading('My heading')
+# div_two = Div('Another Div')
+
+
+# def html_render(param):
+#     print(param.render())
+
+
+# html_render(div_one)
+# html_render(heading)
+# html_render(div_two)
+
+
+
+file_builder = open("logger.txt", "w+")
+
+for i in range(10):
+    file_builder.write(f"I'm on line {i + 1}")
+               
+               
+               
+# file_builder.write("Content")
+file_builder.close
