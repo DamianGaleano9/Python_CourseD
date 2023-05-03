@@ -2171,12 +2171,14 @@ heading_generator('Hi there','3')
 
 
 
-file_builder = open("logger.txt", "w+")
+# file_builder = open("logger.txt", "w+")
 
-for i in range(10):
-    file_builder.write(f"I'm on line {i + 1}")
-               
-               
-               
-# file_builder.write("Content")
-file_builder.close
+# for i in range(10):
+#     file_builder.write(f"I'm on line {i + 1}")
+
+
+
+# # file_builder.write("Content")
+# file_builder.close
+
+

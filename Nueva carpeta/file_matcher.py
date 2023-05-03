@@ -1,4 +1,5 @@
 import fnmatch
+from fnmatch import fnmatchcase
 import os
 
 def list_files():
@@ -16,3 +17,17 @@ def list_files():
             print("Python files: ", file)
 
 list_files()
+
+players = [
+    "Jose Altuve 2B",
+    "Carlos Correa SS",
+    "Alex Bregman 3B",
+    "Scooter Gennett 2B"
+]
+
+
+second_base_players = [player for player in players if fnmatchcase(player,"*2B")]
+third_base = [player for player in players if fnmatchcase(player, "*3B")]
+
+print(second_base_players)
+print(third_base)
