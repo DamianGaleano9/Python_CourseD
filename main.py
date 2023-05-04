@@ -2181,4 +2181,12 @@ heading_generator('Hi there','3')
 # # file_builder.write("Content")
 # file_builder.close
 
+def pretty_price(gross_price, extension):
+    if isinstance(extension, int):
+        extension = extension * 0.01
+    return int(gross_price) + extension
+
+print(pretty_price(2.44, 3.55))
+print(pretty_price(2.50, 93))
+print(pretty_price(2.50, 9))
 
