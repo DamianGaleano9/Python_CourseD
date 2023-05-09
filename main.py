@@ -2190,3 +2190,73 @@ print(pretty_price(2.44, 3.55))
 print(pretty_price(2.50, 93))
 print(pretty_price(2.50, 9))
 
+
+
+db.createUser({
+    user: 'Ana',
+    pwd: 'password',
+    customData: { starDate: new Date() },
+    roles:[
+        { role: 'clusterAdmin', db: 'admin' },
+        { role: 'readAnyDatabase', db: 'admin' },
+    'readWrite'
+    ]
+})
+
+
+db.books.insertOne({
+    "name": "OOP programming",
+    "publishedDate": new Date(),
+    "authors": [
+        {"name": "Salva Galeano"},
+
+    ]
+})
+
+db.books.insertMany({
+    "name": "OOP Programming",
+    "publishedDate": new Date(),
+    "authors": [
+        {"name": "Damian Galeano"}
+    ]
+})
+
+
+
+db.books.insertMany([
+  {
+    "name": "Confident Ruby",
+    "publishedDate": new Date(),
+    "authors": [
+      { "name": "Avdi Grimm" }
+    ]
+  },
+  {
+    "name": "The War of Art",
+    "publishedDate": new Date(),
+    "authors": [
+      {"name": "Steven Pressfield"}
+    ]
+  },
+  {
+    "name": "Blink",
+    "publishedDate": new Date(),
+    "authors": [
+      {"name": "Malcolm Gladwell"}
+    ]
+  }
+])
+
+
+
+db.books.find(
+    {
+        name: "Confident Ruby"
+    },
+    {
+        _id: 0,
+        name: 1,
+        authors: 1
+    }
+).pretty()
+
